@@ -1,0 +1,49 @@
+.hero_banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 80vh;
+    background-image: url("/images/hero_img_mb.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100% 100%;
+}
+
+.hero_banner .logo_hero{
+
+}
+
+.hero_banner .content_hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+}
+
+.hero_banner .content_hero .subtitle_hero{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--claro);
+}
+
+.hero_banner .content_hero .cta_hero{
+    position: relative;
+    display: block;
+    background: linear-gradient(90deg, var(--rojo), var(--carmin));
+    border: none;
+    border-radius: 25px;
+    padding: 1rem 2rem;
+    transition: .3s ease-in-out;    
+    font-family: var(--main-font-family);
+    font-size: 18px;
+}
+
+.hero_banner .content_hero .cta_hero:hover{
+    background: var(--claro);
+    color: var(--rojo);
+    font-weight: bold;
+}
