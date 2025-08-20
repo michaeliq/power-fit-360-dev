@@ -15,10 +15,10 @@ const Header = () => {
                 <img src="/images/logo_full.png" alt="Logo" className="logo" />
             </div>
             <ul className={menuState?"container_nav active":"container_nav"}>
-                <img src="/images/logo_full.png" alt="Logo" className="logo_menu_header_mb" />
-                <li className="item_nav">SERVICIOS</li>
-                <li className="item_nav">TESTIMONIOS</li>
-                <li className="item_nav">GALERIA</li>
+                <a onClick={()=>{changeV}} href="/"><img src="/images/logo_full.png" alt="Logo" className="logo_menu_header_mb" /></a>
+                <a onClick={()=>{changeV()}} href="#services_section"><li className="item_nav">SERVICIOS</li></a>
+                <a onClick={()=>{changeV()}} href="#testimonial_section"><li className="item_nav">TESTIMONIOS</li></a>
+                <a onClick={()=>{changeV()}} href="#gallery_section"><li className="item_nav">GALERIA</li></a>
             </ul>
             <div className="container_buttons_mb">
                 <img src="/images/hamburguer_icon.png" onClick={(e)=>{changeV()}} alt="boton cerrar/abrir menú" className={

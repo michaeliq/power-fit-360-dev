@@ -1,4 +1,6 @@
+import { useState } from "react";
 import "../styles/containers/ServicesSection.css";
+import FormServices from "../components/FormServices";
 
 const services_data = [
     {
@@ -21,35 +23,35 @@ const services_data = [
     },
 ]
 
+const initialDataForm = {
+    fullname:"",
+    weight:null,
+    patologies:"",
+    injuries:"",
+    stature:null,
+    gym_time:null
+}
+
 const ServicesSection = () => {
+
+    const [formData, setFormData] = useState(initialDataForm)
+
+    const getInputData = (e) => {
+        const label = e.target.name
+        const value = e.target.value
+
+        setFormData(prev => prev[label] = value)
+    }
+
     return (
-        <section className="services_section">
+        <section id="services_section" className="services_section">
             <h2 className="services_section_title">
                 NUESTROS <br /> <span>SERVICIOS</span>
             </h2>
             <div className="container_cards">
                 {
                     services_data && services_data.map((data, key) => (
-                        <div className="card" key={key+data.title}>
-                            <div className="header_card">
-                                <img src={data.image} alt={data.title_r + " " + data.title} className="img_card" />
-                                <h4 className="title_card">
-                                    <span>{data.title_r}</span> <br />{data.title}
-                                </h4>
-                                <p className="info_card">
-                                    {data.content}
-                                </p>
-                            </div>
-                            <form action="#" className="form_card">
-                                <input type="text" name="fullname" id="fullname" placeholder="Nombre Completo" />
-                                <input type="number" name="weight" id="weight" value={""} placeholder="Peso (Kg)" />
-                                <input type="text" name="patologies" id="patologies" value={""} placeholder="Patologías (si las hay)" />
-                                <input type="text" name="injuries" id="injuries" value={""} placeholder="Lesiones" />
-                                <input type="text" name="stature" id="stature" value={""} placeholder="Estatura" />
-                                <input type="number" name="gym_time" id="gym_time" value={""} placeholder="Tiempo en el gimnasio" />
-                                <input type="submit" value="ENVIAR A WHATSAPP" />
-                            </form>
-                        </div>
+                        <FormServices key={key + data.title} data={data} />
                     ))
                 }
             </div>

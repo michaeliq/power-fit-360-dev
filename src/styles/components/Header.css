@@ -53,9 +53,9 @@
 }
 
 .container_nav.active .logo_menu_header_mb{
-    width: 70%;
+    width: 80%;
     height: auto;
-    margin-bottom: 4rem;
+    margin: 1rem auto;
 }
 
 .container_nav .item_nav{

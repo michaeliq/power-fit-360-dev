@@ -1,4 +1,4 @@
-
+import "../styles/containers/Testimonials.css"
 
 const testimonial_data = [
     {
@@ -13,20 +13,20 @@ const testimonial_data = [
 
 const TestimonialSection = () => {
     return (
-        <section className="testimonial_section">
+        <section id="testimonial_section" className="testimonial_section">
             <h2 className="testimonial_section_title">
-                NUESTROS <br /> <span>SERVICIOS</span>
+                <span>TESTIMONIOS</span>Y <br />RESULTADOS 
             </h2>
             <div className="container_cards_testimonial_section">
                 {
                     testimonial_data && testimonial_data.map((data, key) => (
-                        <div className="card" key={key+data.nombre}>
-                            <div className="header_card">
-                                <video src="" className="header_video_card"></video>
-                                <h4 className="title_card">
+                        <div className="card_mini" key={key+data.nombre}>
+                            <div className="header_card_mini">
+                                <video src="" className="header_video_card_mini"></video>
+                                <h4 className="title_card_mini">
                                     <span>{data.nombre}</span>
                                 </h4>
-                                <p className="info_card">
+                                <p className="info_card_mini">
                                     {data.content}
                                 </p>
                             </div>
