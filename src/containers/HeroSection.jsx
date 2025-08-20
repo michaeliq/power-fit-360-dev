@@ -1,9 +1,9 @@
 import "../styles/containers/HeroSection.css";
-
+import logo from "../assets/logo_full.png"
 const HeroSection = () => {
     return (
         <section className="hero_banner">
-            <img src="/images/logo_full.png" alt="Logo Power Fit 360" className="logo_hero" />
+            <img src={logo} alt="Logo Power Fit 360" className="logo_hero" />
             <div className="content_hero">
                 <h1 className="subtitle_hero">
                     Transforma tu cuerpo, <br />transforma tu vida

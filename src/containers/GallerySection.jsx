@@ -1,21 +1,25 @@
 import "../styles/containers/GallerySection.css"
+import comp_img_1 from "../assets/component_img_1.png"
+import comp_img_2 from "../assets/component_img_2.png"
+import comp_img_3 from "../assets/component_img_3.png"
+import comp_img_4 from "../assets/component_img_4.png"
 
 const gallery_data = [
     {
         title:"Foto de entrenamiento",
-        image:"/images/component_img_1.png"
+        image:comp_img_1
     },
     {
         title:"Antes y después",
-        image:"/images/component_img_2.png"
+        image:comp_img_2
     },
     {
         title:"Sesión de cardio",
-        image:"/images/component_img_3.png"
+        image:comp_img_3
     },
     {
         title:"Objetivos logrados",
-        image:"/images/component_img_4.png"
+        image:comp_img_4
     },
 ]
 

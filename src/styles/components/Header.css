@@ -52,6 +52,10 @@
     margin-bottom: 4rem;
 }
 
+.container_nav.active a{
+    text-align: center;
+}
+
 .container_nav.active .logo_menu_header_mb{
     width: 80%;
     height: auto;
@@ -86,7 +90,7 @@
 }
 
 .container_buttons_mb .header_btn{
-    
+    content: url("/images/hamburguer_icon.png");
 }
 
 .container_buttons_mb .header_btn.active{

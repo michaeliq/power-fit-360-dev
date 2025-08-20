@@ -1,5 +1,6 @@
 import { useState } from "react"
 import "../styles/components/Header.css"
+import logo from "../assets/logo_full.png"
 
 const Header = () => {
 
@@ -12,10 +13,10 @@ const Header = () => {
     return(
         <div className="header">
             <div className="container_logo">
-                <img src="/images/logo_full.png" alt="Logo" className="logo" />
+                <img src={logo} alt="Logo" className="logo" />
             </div>
             <ul className={menuState?"container_nav active":"container_nav"}>
-                <a onClick={()=>{changeV}} href="/"><img src="/images/logo_full.png" alt="Logo" className="logo_menu_header_mb" /></a>
+                <a onClick={()=>{changeV}} href="/"><img src={logo} alt="Logo" className="logo_menu_header_mb" /></a>
                 <a onClick={()=>{changeV()}} href="#services_section"><li className="item_nav">SERVICIOS</li></a>
                 <a onClick={()=>{changeV()}} href="#testimonial_section"><li className="item_nav">TESTIMONIOS</li></a>
                 <a onClick={()=>{changeV()}} href="#gallery_section"><li className="item_nav">GALERIA</li></a>
