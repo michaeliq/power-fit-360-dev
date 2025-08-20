@@ -2,7 +2,7 @@
   "name": "power-fit-360",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://michaeliq.github.io/power-fit-360-dev.git/",
+  "homepage": "https://michaeliq.github.io/power-fit-360-dev/",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
