@@ -26,10 +26,16 @@
   scroll-behavior: smooth;
 }
 
+html{
+    scrollbar-color: var(--rojo) var(--negro);
+
+}
+
 body{
   background-image: url("/images/background_page_mb.png");
   background-attachment:fixed;
   backdrop-filter: contrast(70%);
+
 }
 
 body::after{

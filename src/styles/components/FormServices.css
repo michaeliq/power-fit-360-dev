@@ -1,4 +1,4 @@
-.card{
+.card {
     width: 80%;
     height: auto;
     border: 1px solid var(--rojo);
@@ -10,36 +10,34 @@
     padding: 1rem;
 }
 
-.card .header_card{
+.card .header_card {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.card .header_card .img_card{
-    
-}
+.card .header_card .img_card {}
 
-.card .header_card .title_card{
+.card .header_card .title_card {
     text-align: center;
     color: var(--claro);
     font-family: var(--main-font-family);
     font-size: 20px;
 }
 
-.card .header_card .title_card span{
+.card .header_card .title_card span {
     color: var(--rojo);
     font-size: 20px;
 }
 
-.card .header_card .info_card{
+.card .header_card .info_card {
     text-align: center;
     color: var(--claro);
     font-family: var(--main-font-family);
     font-size: 14px;
 }
 
-.card .form_card{
+.card .form_card {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -47,29 +45,42 @@
     row-gap: .8rem;
 }
 
-.card .form_card input{
+.card .form_card input {
     width: 90%;
     padding: 1rem;
     border: none;
     background-color: var(--marron);
+    border-radius: 5px;
 }
 
 .card .form_card input::placeholder,
 .card .form_card textarea::placeholder {
-  color: var(--claro); 
-  font-style: var(--main-font-family); 
-  font-size: 14px; 
-  text-align: center;
+    color: var(--claro);
+    font-style: var(--main-font-family);
+    font-size: 14px;
+    text-align: center;
 }
 
-.card .form_card input[type=submit]{
+.card .form_card .select_input_card_form {
+    width: 90%;
+    padding: 1rem;
+    background-color: var(--marron);
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    color: var(--claro);
+    font-family: var(--main-font-family);
+}
+
+.card .form_card input[type=submit] {
     position: relative;
     display: block;
     background: linear-gradient(90deg, var(--rojo), var(--carmin));
     border: none;
     border-radius: 25px;
     padding: .5rem 2rem;
-    transition: .3s ease-in-out;    
+    transition: .3s ease-in-out;
     font-family: var(--main-font-family);
     font-size: 18px;
     margin-top: 1rem;
