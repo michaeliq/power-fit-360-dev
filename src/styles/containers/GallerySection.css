@@ -1,4 +1,4 @@
-.gallery_section{
+.gallery_section {
     width: 100vw;
     height: auto;
     padding: 4rem 2rem;
@@ -7,7 +7,7 @@
     justify-content: center;
 }
 
-.gallery_section .component_cards_container{
+.gallery_section .component_cards_container {
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -19,7 +19,7 @@
     height: auto;
 }
 
-.gallery_section .component_cards_container .component_card{
+.gallery_section .component_cards_container .component_card {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,17 +27,16 @@
     border: .5px solid var(--rojo);
     border-radius: 0px 15px 15px 15px;
     backdrop-filter: brightness(15%);
-    width: 100%;
     width: 143px;
     height: 140px;
     transition: .3s ease;
 }
 
-.gallery_section .component_cards_container .component_card:hover{
+.gallery_section .component_cards_container .component_card:hover {
     transform: scale(1.1);
 }
 
-.gallery_section .component_cards_container .component_card .title_component_card{
+.gallery_section .component_cards_container .component_card .title_component_card {
     font-family: var(--main-font-family);
     font-size: 12px;
     color: var(--claro);
@@ -46,8 +45,42 @@
 
 }
 
-.gallery_section .component_cards_container .component_card .img_component_card{
+.gallery_section .component_cards_container .component_card .img_component_card {
     width: 70px;
     height: auto;
     margin: 0px auto;
+}
+
+@media (min-width:900px) {
+
+    .gallery_section {
+        width: 100vw;
+        padding: 4rem 6rem;
+        align-items: center;
+    }
+
+    .gallery_section .component_cards_container {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: none;
+        gap: 3rem;
+    }
+
+    .gallery_section .component_cards_container .component_card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: .5px solid var(--rojo);
+        border-radius: 0px 15px 15px 15px;
+        backdrop-filter: brightness(15%);
+        width: 243px;
+        height: 240px;
+        transition: .3s ease;
+    }
+
+    .gallery_section .component_cards_container .component_card .title_component_card {
+        font-size: 16px;
+    }
 }

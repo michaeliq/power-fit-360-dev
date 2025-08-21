@@ -31,7 +31,7 @@ const TestimonialSection = () => {
     return (
         <section id="testimonial_section" className="testimonial_section">
             <h2 className="testimonial_section_title">
-                <span>TESTIMONIOS</span>Y <br />RESULTADOS 
+                <span>TESTIMONIOS</span> Y <br />RESULTADOS 
             </h2>
             <div className="container_cards_testimonial_section">
                 {

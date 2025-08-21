@@ -1,4 +1,4 @@
-.hero_banner{
+.hero_banner {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,11 +11,9 @@
     background-size: 100% 100%;
 }
 
-.hero_banner .logo_hero{
+.hero_banner .logo_hero {}
 
-}
-
-.hero_banner .content_hero{
+.hero_banner .content_hero {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,27 +21,77 @@
     row-gap: 1rem;
 }
 
-.hero_banner .content_hero .subtitle_hero{
+.hero_banner .content_hero .subtitle_hero {
     text-align: center;
     font-size: 16px;
     font-weight: 500;
     color: var(--claro);
 }
 
-.hero_banner .content_hero .cta_hero{
+.hero_banner .content_hero .cta_hero {
     position: relative;
     display: block;
     background: linear-gradient(90deg, var(--rojo), var(--carmin));
     border: none;
     border-radius: 25px;
     padding: 1rem 2rem;
-    transition: .3s ease-in-out;    
+    transition: .3s ease-in-out;
     font-family: var(--main-font-family);
     font-size: 18px;
 }
 
-.hero_banner .content_hero .cta_hero:hover{
+.hero_banner .content_hero .cta_hero:hover {
     background: var(--claro);
     color: var(--rojo);
     font-weight: bold;
+}
+
+/* Media Queries */
+
+@media (min-width:900px) {
+
+    .hero_banner {
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        padding: 0px 6rem;
+        width: 100vw;
+        height: 80vh;
+        background-image: url("/images/hero_img.png");
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: 100% 100%;
+    }
+
+    .hero_banner .content_hero .subtitle_hero {
+        text-align: left;
+        font-size: 60px;
+        line-height: 5rem;
+        font-weight: bold;
+        color: var(--claro);
+    }
+
+    .hero_banner .logo_hero {
+        width: 30%;
+        height: auto;
+        content: url("/images/logo_full.png");
+    }
+
+    .hero_banner .content_hero {
+    align-items: flex-start;
+}
+
+    .hero_banner .content_hero .subtitle_hero span {
+        color: var(--rojo);
+    }
+
+    .hero_banner .content_hero .cta_hero {
+    border-radius: 35px;
+    padding: 1rem 3rem;
+    font-family: var(--main-font-family);
+    font-size: 30px;
+    font-weight: bold;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
 }

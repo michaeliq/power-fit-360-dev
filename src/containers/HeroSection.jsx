@@ -6,7 +6,7 @@ const HeroSection = () => {
             <img src={logo} alt="Logo Power Fit 360" className="logo_hero" />
             <div className="content_hero">
                 <h1 className="subtitle_hero">
-                    Transforma tu cuerpo, <br />transforma tu vida
+                    <span>Transforma</span> tu cuerpo, <br />transforma <span>tu vida</span>
                 </h1>
                 <button className="cta_hero">
                     COMIENZA AHORA
