@@ -49,11 +49,11 @@
 
 @media (min-width:900px) {
     .footer {
-        padding: 3rem 4rem;
+        padding: 3rem 6rem;
         flex-direction: row;
         justify-content: space-between;
         background-color: var(--negro);
-        background-image: url("/images/footer_bk_mb.png");
+        background-image: url("/images/footer_bk.png");
         background-size: cover;
     }
 

@@ -28,14 +28,13 @@
 
 html{
     scrollbar-color: var(--rojo) var(--negro);
-
+    overflow-x: hidden;
 }
 
 body{
   background-image: url("/images/background_page_mb.png");
   background-attachment:fixed;
   backdrop-filter: contrast(70%);
-
 }
 
 body::after{
@@ -47,6 +46,16 @@ body::after{
   top: 0;
   left: 0;
   z-index: -1;
+}
+
+/*Media Queries*/
+
+@media (min-width:900px){
+  body{
+  background-image: none;
+  background-attachment:none;
+  backdrop-filter: none;
+}
 }
 
 a {
